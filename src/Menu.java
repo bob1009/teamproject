@@ -17,7 +17,7 @@ public class Menu {
 
 		}
 		if (operation == 2) {
-			System.out.println("mad libs");
+			madlibs();
 
 		}
 		if (operation == 3) {
@@ -46,5 +46,16 @@ public class Menu {
 		JOptionPane.showMessageDialog(null, "your random number is " + c);
 
 	}
-	
+	public static void madlibs() {
+		String adjective = JOptionPane.showInputDialog("Give me a adjective");
+		
+		String verb =JOptionPane.showInputDialog("Give me a verb present tense");
+		
+		String dessert = JOptionPane.showInputDialog("Give me a dessert");
+		String animal =JOptionPane.showInputDialog("Big or wild animal");
+		String place =JOptionPane.showInputDialog("Give me a place");
+		
+		JOptionPane.showMessageDialog(null,"A "+adjective +" woman was " +verb+ " down the street and wanted to get a " +dessert+" because it was so hot. On her way to buy some " +dessert+ " she saw a " +animal+ " "
+				+ "running loose at the "+place+". She ran all the way home");  
+	}
 }
