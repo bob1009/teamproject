@@ -11,8 +11,8 @@ public class Menu {
 			riddler();
 		}
 		if (operation == 1) {
-			System.out.println("adding");
 
+			add();
 		}
 		if (operation == 2) {
 			System.out.println("mad libs");
@@ -33,4 +33,13 @@ public class Menu {
 			JOptionPane.showMessageDialog(null, "you are wrong");
 		}
 	}
+
+	public static void add() {
+		String z = JOptionPane.showInputDialog("type in 1 number to add");
+		String p = JOptionPane.showInputDialog("type in 1 number to add");
+		int s = Integer.parseInt(z);
+		int j = Integer.parseInt(p);
+		JOptionPane.showMessageDialog(null, s + "+" + j + "=" + (s + j));
+	}
+
 }
